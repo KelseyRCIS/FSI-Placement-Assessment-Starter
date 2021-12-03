@@ -29,44 +29,45 @@ let sugar = 0   // Sugar Sprinkle
 // Event listener for clicks on the "+" button for Gingerbread cookies
 document.getElementById('add-gb').addEventListener('click', function(e) {
     gb++;
-    document.getElementById('add-gb').textContent=gb;
+    document.getElementById('qty-gb').textContent=gb;
     document.getElementById('qty-total').textContent=gb+cc+sugar;
 })
 
 // Event listener for clicks on the "-" button for Gingerbread cookies
 document.getElementById('minus-gb').addEventListener('click', function(e) {
-        gb--;
-        document.getElementById('minus-gb').textContent=gb;
-        document.getElementById('qty-total').textContent=gb+cc+sugar;
+    gb--;
+    document.getElementById('qty-gb').textContent=gb;
+    document.getElementById('qty-total').textContent=gb+cc+sugar;
 })
 
 // Event listener for clicks on the "+" button for Chocolate Chip cookies
 document.getElementById('add-cc').addEventListener('click', function(e) {
     cc++;
-    document.getElementById('add-cc').textContent=gb;
+    document.getElementById('qty-cc').textContent=cc;
     document.getElementById('qty-total').textContent=gb+cc+sugar;
 })
 
 // Event listener for clicks on the "-" button for Chocolate Chip cookies
 document.getElementById('minus-cc').addEventListener('click', function(e) {
-        cc--;
-        document.getElementById('minus-cc').textContent=gb;
-        document.getElementById('qty-total').textContent=gb+cc+sugar;
+    cc--;
+    document.getElementById('qty-cc').textContent=cc;
+    document.getElementById('qty-total').textContent=gb+cc+sugar;
 })
 
 // Event listener for clicks on the "+" button for Sugar Sprinkle cookies
 document.getElementById('add-sugar').addEventListener('click', function(e) {
     sugar++;
-    document.getElementById('add-sugar').textContent=gb;
+    document.getElementById('qty-sugar').textContent=sugar;
     document.getElementById('qty-total').textContent=gb+cc+sugar;
 })
 
 // Event listener for clicks on the "-" button for Sugar Sprinkle cookies
 document.getElementById('minus-sugar').addEventListener('click', function(e) {
-        sugar--;
-        document.getElementById('minus-sugar').textContent=gb;
-        document.getElementById('qty-total').textContent=gb+cc+sugar;
+    sugar--;
+    document.getElementById('qty-sugar').textContent=sugar;
+    document.getElementById('qty-total').textContent=gb+cc+sugar;
 })
+
 
 // // Event listener for clicks on the "+" button for Gingerbread cookies
 // document.getElementById('add-gb').addEventListener('click', function(e) {
